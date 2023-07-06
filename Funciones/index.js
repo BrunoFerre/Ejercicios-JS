@@ -39,6 +39,7 @@ function esMayorDeEdad(edad) {
     console.log("----------------");
 }
 esMayorDeEdad(19)
+
 function calcularImpuestos(ingresoAnual) {
     if (ingresoAnual > 20000) {
       return ingresoAnual * 0.2;
@@ -47,8 +48,11 @@ function calcularImpuestos(ingresoAnual) {
     } else {
       return ingresoAnual * 0.1;
     }
-  }
+}
+
 let impuestos= calcularImpuestos(23000)
+
+
 console.log(`El impuesto a pagar es ${impuestos}`);
 console.log("----------------");
 // ejercicio 7
@@ -59,4 +63,14 @@ function verificarDia(numeroDia) {
         console.log("No es dia laboral");
     }
 }
+
 verificarDia(3)
+
+function calcularPrecio(precio, cantidad) {
+    let precioFinal=precio*cantidad
+    if(cantidad>=10 || cantidad<20){
+        precioFinal= precioFinal -(precioFinal * 0.1)
+        console.log(precioFinal);
+    }
+}
+calcularPrecio(20,10)
