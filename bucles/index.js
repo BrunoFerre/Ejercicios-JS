@@ -118,7 +118,7 @@ console.log(numerosImpares); */
  let sumaPar = 0
  let sumaImpar = 0
 
- while (numero !=0){
+ while (numero != 0){
      numCalculo.push(numero)
      numero = Number(prompt("Ingrese su numero"))
  }
